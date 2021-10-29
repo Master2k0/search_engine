@@ -1,0 +1,91 @@
+
+
+.result{
+    max-width: 100%;
+    margin: 10px 0 30px 0;
+}
+
+.result__row1{
+    margin-bottom: 5px;
+}
+
+.index{
+    font-size: 26px;
+    margin-right: 5px;
+}
+
+.title{
+    font-size: 20px;
+    color: #356EA4;
+}
+
+.result__row2{
+ display: -webkit-box;
+ -webkit-box-orient: vertical;
+ -webkit-line-clamp: 1;
+
+ margin-bottom: 5px;
+ overflow: hidden;
+
+ color: #0FD1A7;
+
+}
+
+.author,
+.year{
+    color: #0FD1A7;
+    font-size: 16px;
+}
+
+.author{
+    max-width: 50%;
+
+    padding-right: 5px;
+    
+    border-right: 2px solid #999;
+}
+
+.result__row3{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.content{
+    font-size: 16px;
+}
+
+
+[data-aos="fade-result"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+}
+[data-aos="fade-result"].aos-animate {
+    opacity: 1;
+}
+
+@media screen and (min-width: 1200px) {
+    [data-aos="fade-result"] {
+        transform: translateX(100px);
+   }
+    [data-aos="fade-result"].aos-animate {
+        transform: translateX(0);
+   }
+}
+
+@media screen and (max-width: 1199px) {
+    [data-aos="fade-result"] {
+        transform: translateY(-30px);
+   }
+    [data-aos="fade-result"].aos-animate {
+        transform: translateY(0);
+   }
+}
+
+@media (max-width: 768px){
+    .result{
+        /* margin-left: 30px; */
+    }
+}
+

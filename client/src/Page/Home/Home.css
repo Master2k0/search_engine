@@ -1,0 +1,47 @@
+.home{
+    display: block;
+    position: relative;
+    height: 100vh;
+
+    background-image: url('../../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.name-search{
+    color: #fff;
+    padding: 150px 0 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-shadow: 0 0 5px #000;
+}
+
+.name-search span{
+    font-size: 40px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .switch-option{
+    text-shadow: 0 0 5px #000;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+@media (max-width: 350px){
+    .name-search span {
+        font-size: 35px;
+    }
+}
