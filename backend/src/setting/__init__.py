@@ -1,0 +1,1 @@
+from src.setting import config
