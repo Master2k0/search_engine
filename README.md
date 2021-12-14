@@ -1,11 +1,8 @@
 # CS419
 # Thành viên nhóm:
 Tên | MSSV
---- | --- 
 Trần Hoàng Sơn | 18521351
---- | --- 
 Phạm Ngọc Trường | 18521571
---- | --- 
 Đặng Nguyễn Anh Tuấn | 18521591
 # Yêu cầu:
   - Python 3.8
