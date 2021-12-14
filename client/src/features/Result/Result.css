@@ -9,6 +9,10 @@
     margin-bottom: 5px;
 }
 
+.result__row1 .index{
+    color: #356EA4;
+}
+
 .index{
     font-size: 26px;
     margin-right: 5px;

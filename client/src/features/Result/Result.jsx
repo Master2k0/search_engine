@@ -5,26 +5,26 @@ import AOS from 'aos'
 import "aos/dist/aos.css";
 AOS.init();
 Result.propTypes = {
-    outCome: PropTypes.object,
+    data: PropTypes.string,
+    stt: PropTypes.string,
 };
 
 function Result(props) {
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
       }
-    const {outCome} = props;
+    const {data, stt} = props;
+    // console.log("data ne", stt)
     return (
+        
         <div data-aos="fade-result" data-aos-duration="1000" className="result">
+            <br></br>
             <div className="result__row1">
-                <span className="index">#{outCome.STT}</span>
-                <span className="title">{capitalizeFirstLetter(outCome.Title)}</span>
+                <span className="index">[#{stt}]</span>
             </div>
-            <div className="result__row2">
-                <span className="author">{capitalizeFirstLetter(outCome.Author)}</span>
-                <span className="year"> {capitalizeFirstLetter(outCome.Year)}</span>
-            </div>
+            
             <div className="result__row3">
-                <span className="content">{capitalizeFirstLetter(outCome.Content)}</span>
+                <span className="content">{capitalizeFirstLetter(data)}</span>
             </div>
         </div>
     );

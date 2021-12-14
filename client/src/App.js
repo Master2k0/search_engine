@@ -7,18 +7,19 @@ import {useState} from 'react';
 
 function App() {
     const [option,setOption] = useState(false);
+    const [retrieval, setRetrieval] = useState(false);
     return (
         <BrowserRouter>
             <div className="App">
                 <Switch>
                     <Route exact path="/">
-                        <Home option={option} setOption={setOption} />
+                        <Home option={option} setOption={setOption} retrieval={retrieval} setRetrieval={setRetrieval} />
                     </Route>
                     <Route  path="/home">
-                        <Home option={option} setOption={setOption}/>
+                        <Home option={option} setOption={setOption} retrieval={retrieval} setRetrieval={setRetrieval}/>
                     </Route>
                     <Route  path="/search">
-                        <Search option={option} setOption={setOption}/>
+                        <Search option={option} setOption={setOption} retrieval={retrieval} setRetrieval={setRetrieval}/>
                     </Route>
                     <Route>
                       <NotFound/>
