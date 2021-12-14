@@ -9,17 +9,18 @@ Phạm Ngọc Trường | 18521571
   - Python 3.8
   - Nodejs
 # Cách sử dụng
-  Bước 1: Cài module cần cho FE:
+  Bước 1: Giải nén file query.rar trong backend/src/
+  Bước 2: Cài module cần cho FE:
   - cd tới đường dẫn client
   - Gõ npm i trong terminal
   
-  Bước 2: Trường ghi
+  Bước 3: Trường ghi
   
-  Bước 3: Chạy FE:
+  Bước 4: Chạy FE:
   - cd tới đường dẫn client
   - Gõ npm start trong terminal
 
-  Bước 4: Chạy BE:
+  Bước 5: Chạy BE:
   - cd tới đường dẫn backend
   - Gõ python main.py
   
