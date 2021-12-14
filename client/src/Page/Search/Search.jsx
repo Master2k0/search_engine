@@ -55,7 +55,7 @@ function Search(props) {
                 data: bodyFormData,
             })
             .then(function (response) {
-                console.log(response.data)
+                // console.log(response.data)
                 setResult(response.data)
                 setWait(true)
                 const value = JSON.stringify(response.data);
@@ -103,11 +103,11 @@ function Search(props) {
             { wait ? <div className="search-result">
             {   
                     Object.keys(result).map(key =>{
-                    return <Result key={key} data={result[key]} stt={key}/>
+                    return <Result key={key} data={result[key]}/>
                 })
 
             }
-            { !Object.keys(result).length && <Result key={'null'} data={"Không tìm thấy kết quả"} stt={"Unknown"}/>}
+            { !Object.keys(result).length && <Result key={'null'} data={{text:"Không tìm thấy kết quả", key:'Unknown'}} />}
             </div> : hangOn() }
             
             <div className="bottom-footer">

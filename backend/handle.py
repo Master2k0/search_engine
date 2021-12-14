@@ -88,7 +88,11 @@ def handle(key, database, types):
         lst = VSM_cranfield.rank(key, params[0], params[1], params[2])
 
     lst_result = lst[:10]
-    for i in lst_result:
-        results[i] = database[types]['dataset'][i]
+
+    for index in range(len(lst_result)):
+        key = lst_result[index]
+        results[index] = {}
+        results[index]['key'] = key
+        results[index]['text'] = database[types]['dataset'][key]
         
     return results
